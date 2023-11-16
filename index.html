@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+    <title>Imovel Guide</title>
+</head>
+<body>
+    <header>
+      
+        <div class="caixa"> 
+            <img class="logo" src="./img/logo-imovel-guide-cinza2.webp" alt="">
+       
+            <a href="">Condomínios</a>
+            <a href="">Fórum</a>
+            <a href="">Guia</a>
+            <a href="">Artigos</a>
+            <a href="">Ferramentas</a>
+           
+        </div>
+        <div class="caixa2">
+            <a href="">Cotar Imóvel</a>
+            <a href="">Planos</a>
+            <a href="">Entrar</a>
+            <button class="btt">CADASTRE-SE</button>
+        </div>
+
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+      
+          <ul class="menu__box">
+            <li><a class="menu__item" href="#">Condomínios</a></li>
+            <li><a class="menu__item" href="#">Fórum</a></li>
+            <li><a class="menu__item" href="#">Guia</a></li>
+            <li><a class="menu__item" href="#">Artigos</a></li>
+            <li><a class="menu__item" href="#">Ferramentas</a></li>
+            <li><a class="menu__item" href="#">Cotar Imóvel</a></li>
+            <li><a class="menu__item" href="#">Planos</a></li>
+            <li><a class="menu__item" href="#">Entrar</a></li>
+            <button class="btt">CADASTRE-SE</button>
+          </ul>
+        </div>
+
+    </header>
+    <main>
+        <div class="main">
+         <div class="caixa-usuario">
+           
+            <div class="usuario">
+                <div class="container">
+                    <img src="./img/images.jpg" alt="Imagem 1" class="img1">
+                    <img src="./img/images.jpg" alt="Imagem 2" class="img2">
+                  </div>
+               <div class="name-usuario">
+                 <h3>Jose Carlos</h3>
+                 <p>3.000 pontos</p>
+                 <a href="">Ver telefone</a>
+                </div>
+            </div>
+
+            <div class="usuario">
+                <div class="container">
+                    <img src="./img/images.jpg" alt="Imagem 1" class="img1">
+                    <img src="./img/images.jpg" alt="Imagem 2" class="img2">
+                  </div>
+                <div class="name-usuario">
+                 <h3>Joao Gomes</h3>
+                 <p>3.000 pontos</p>
+                 <a href="">Ver telefone</a>
+                </div>
+            </div>
+         
+        </div>
+
+         <div class="caixa-mensagem">
+            <h2>Mande uma mensagem:</h2>
+            <input id="cpf" oninput="mascara(this)" placeholder="Digite seu CPF">
+            <input id="tel" type="tel" maxlength="15" onkeyup="handlePhone(event)" placeholder="Digite seu telefone" />
+            <textarea name="" id="" style="resize: none" cols="30" rows="5" placeholder="Digite o assunto"></textarea>
+            <button type="button" onclick="Validar()">Enviar mensagem</button>
+         </div>
+
+         <div class="caixa-regra">
+            <h2>Regra de 3</h2>
+
+            <div class="caixa-numero">
+             <input id="a" type="text">
+             <hr>
+             <input id="b" type="text">
+            </div>
+            
+            <div class="caixa-numero">
+             <input id="c" type="text">
+             <hr>
+             <output type="text" id="resultado">
+            </div>
+
+            <button type="button" onclick="calcularRegraDeTres()">Calcular</button>
+         </div>
+
+        </div>
+
+        <div class="main">
+          <div class="caixa-img">
+            <img src="./img/CASA.png" alt="">
+            <button>ABRIR IMAGEM NO MODAL</button>
+          </div>
+         
+          <div class="caixa-img">
+            <img src="./img/CASA.png" alt="">
+            <button id="btt">DOWNLOAD</button>
+          </div>
+         
+          <div class="caixa-img">
+            <img src="./img/CASA.png" alt="">
+          
+          </div>
+      
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="caixa-footer1">
+         <a href="">Termos</a>
+         <a href="">Contatos</a>
+         <a href="">Sobre</a>
+        </div>
+  
+        <div class="caixa-footer2">
+            <p>© Copyright 2022. Todos os direitos reservados</p>
+            <img class="logo" src="./img/logo-imovel-guide-cinza2.webp" alt="">
+        </div>
+    </footer>
+</body>
+</html>
